@@ -135,8 +135,8 @@ In a production environment, we would enhance:
 1. Clone the repository
 
    ```bash
-   git clone https://github.com/yourusername/weather-activity-ranker.git
-   cd weather-activity-ranker
+   git clone https://github.com/Kamacho68/velastra.git
+   cd velastra
    ```
 
 2. Install backend dependencies
