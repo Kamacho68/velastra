@@ -70,7 +70,7 @@ The application interface was designed to be fully responsive, working well on d
 
 ## 🤖 AI Assistance and Human Judgment
 
-### How AI Tools Assisted Development (chatGPT & Claude.ai)
+### How AI Tools Assisted Development (chatGPT, DeepSeek & Claude.ai)
 
 AI tools were instrumental in accelerating development:
 
