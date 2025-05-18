@@ -1,0 +1,167 @@
+/* Global Styles */
+body {
+  font-family:
+    "Segoe UI",
+    system-ui,
+    -apple-system,
+    sans-serif;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #f1f3f5;
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Header */
+.app-header {
+  background-color: #282c34;
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.app-header h1 {
+  font-size: 2rem;
+}
+
+.app-subheading {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+/* Instructions Section */
+.instructions {
+  margin: 2rem auto;
+  text-align: center;
+  padding: 1rem;
+}
+
+.instructions-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+/* Results Header */
+.results-header {
+  margin: 2rem 0 1rem;
+  text-align: center;
+}
+
+.location-title {
+  display: flex;
+  align-items: center; /* This vertically aligns the icon and text */
+  gap: 0.5rem; /* Adjust space between the icon and text */
+  font-size: 1.25rem; /* Adjust the font size of the location name */
+  color: #2d3748; /* Text color */
+}
+
+.location-icon {
+  font-size: 1.5rem; /* Adjust the size of the icon */
+}
+
+.results-subtitle {
+  font-size: 1rem;
+  color: #4a5568;
+  margin-top: 0.25rem;
+}
+
+/* Spinner */
+.loading-spinner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 2rem 0;
+  color: #4a5568;
+}
+
+.spinner {
+  width: 32px;
+  height: 32px;
+  border: 4px solid #ccc;
+  border-top-color: #4a90e2;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 1rem;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Toasts */
+.success-toast,
+.error-banner {
+  max-width: 600px;
+  margin: 1rem auto;
+  padding: 1rem;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.success-toast {
+  background-color: #48bb78;
+  color: white;
+}
+
+.error-banner {
+  background-color: #f56565;
+  color: white;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+  .app-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .app-subheading {
+    font-size: 0.9rem;
+  }
+
+  .location-title {
+    flex-direction: column;
+  }
+
+  .instructions-icon {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .app {
+    padding: 1rem 0.5rem;
+  }
+
+  .app-header {
+    padding: 1rem;
+  }
+
+  .app-header h1 {
+    font-size: 1.25rem;
+  }
+
+  .app-subheading {
+    font-size: 0.8rem;
+  }
+
+  .results-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .instructions p {
+    font-size: 0.9rem;
+  }
+}

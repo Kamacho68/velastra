@@ -1,0 +1,115 @@
+.weather-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e9ecef;
+  transition: transform 0.2s ease;
+}
+
+.weather-card:hover {
+  transform: translateY(-4px);
+}
+
+.weather-card-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 1.25rem;
+}
+
+.weather-card-header svg {
+  font-size: 1.5rem;
+  color: #4dabf7;
+}
+
+.weather-card h3 {
+  margin: 0;
+  color: #343a40;
+  font-size: 1.1rem;
+}
+
+.activities-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.activity-item {
+  display: flex;
+  gap: 12px;
+  padding: 1rem;
+  border-radius: 8px;
+  background: #f8f9fa;
+  transition: all 0.2s ease;
+}
+
+.activity-item:hover {
+  background: #f1f3f5;
+}
+
+.activity-icon {
+  font-size: 1.25rem;
+  color: #495057;
+  margin-top: 2px;
+}
+
+.activity-content {
+  flex: 1;
+}
+
+.activity-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+.activity-name {
+  font-weight: 600;
+  color: #212529;
+}
+
+.activity-score {
+  font-weight: 700;
+}
+
+.activity-description {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #495057;
+  line-height: 1.4;
+  text-align: initial;
+}
+
+/* Score-based classes */
+.excellent {
+  border-left: 4px solid #40c057;
+}
+
+.excellent .activity-score {
+  color: #40c057;
+}
+
+.good {
+  border-left: 4px solid #82c91e;
+}
+
+.good .activity-score {
+  color: #82c91e;
+}
+
+.fair {
+  border-left: 4px solid #fab005;
+}
+
+.fair .activity-score {
+  color: #fab005;
+}
+
+.poor {
+  border-left: 4px solid #fa5252;
+}
+
+.poor .activity-score {
+  color: #fa5252;
+}

@@ -1,0 +1,48 @@
+/* .activity-list-container {
+  margin-top: 2rem; */
+/* padding: 1.5rem; */
+/* background: white; */
+/* border-radius: 12px; */
+/* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+} */
+
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 1.5rem;
+}
+
+.section-icon {
+  font-size: 1.5rem;
+  color: #4dabf7;
+}
+
+.weather-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+.no-results {
+  text-align: center;
+  padding: 2rem;
+  background: #f8f9fa;
+  border-radius: 12px;
+  margin-top: 2rem;
+}
+
+.warning-icon {
+  font-size: 2rem;
+  color: #ff922b;
+  margin-bottom: 1rem;
+}
+
+.no-results h3 {
+  color: #495057;
+  margin-bottom: 0.5rem;
+}
+
+.no-results p {
+  color: #868e96;
+}

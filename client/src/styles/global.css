@@ -1,0 +1,179 @@
+body {
+  /* font-family: Arial, sans-serif; */
+  font-family:
+    ui-sans-serif,
+    system-ui,
+    sans-serif,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    Segoe UI Symbol,
+    "Noto Color Emoji";
+  /* max-width: 1200px; */
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ddf5ff;
+}
+
+.app {
+  min-height: 100vh;
+  /* display: flex; */
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* or center if you want vertical centering */
+  padding: 1rem;
+  text-align: center;
+  /* background-color: #f1f3f5; */
+}
+
+form {
+  display: flex;
+  gap: 1rem;
+  /* margin-bottom: 2rem; */
+}
+
+input {
+  padding: 0.5rem;
+  flex-grow: 1;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  background: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  /* margin-left: 1rem; */
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+button:disabled {
+  background: #cccccc;
+}
+
+.forecast-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.error {
+  color: red;
+}
+
+h1 {
+  font-size: 2.25rem;
+  margin-bottom: 0.5rem;
+  /* color: #343a40; */
+  color: rgb(0 114 187 / var(--tw-text-opacity, 1));
+  line-height: 2.5rem;
+}
+
+.app-subheading {
+  font-size: 1.1rem;
+  color: #495057;
+  margin-bottom: 1rem;
+  /* max-width: 500px; */
+}
+
+.instructions,
+.results-header {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.instructions h2,
+.results-header h2 {
+  font-size: 1.5rem;
+  color: #343a40;
+  margin-bottom: 0.5rem;
+  font-weight: normal;
+}
+
+.instructions p,
+.results-header p {
+  font-size: 1rem;
+  color: #495057;
+}
+
+/* Status Indicators */
+.loading-spinner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 1rem 0;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 0.5rem;
+}
+
+.loading-spinner .spinner {
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 3px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  border-top-color: #4299e1;
+  animation: spin 1s linear infinite;
+}
+
+.error-banner {
+  padding: 1rem;
+  margin: 1rem 0;
+  background: #fff5f5;
+  color: #c53030;
+  border-radius: 0.5rem;
+  border-left: 4px solid #c53030;
+}
+
+.success-toast {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #d3f9d8;
+  color: #2b8a3e;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  animation: fadeInUp 0.3s ease-out;
+}
+
+.success-toast p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+/* Toast close button */
+.success-toast .close-toast {
+  background: none;
+  border: none;
+  color: #2b8a3e;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.instructions-icon {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
