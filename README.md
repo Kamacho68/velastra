@@ -172,6 +172,6 @@ In a production environment, we would enhance:
 
 ## 🔮 Conclusion
 
-The Weather Activity Ranker demonstrates a clean, scalable architecture using modern web technologies. While the current implementation is simplified to meet the time constraints, the foundation is solid and would support future enhancements and scaling with minimal refactoring.
+The Weather Activity Forecast demonstrates a clean, scalable architecture using modern web technologies. While the current implementation is simplified to meet the time constraints, the foundation is solid and would support future enhancements and scaling with minimal refactoring.
 
 The separation of concerns between frontend and backend, use of GraphQL for data fetching, and modular component design all contribute to a maintainable codebase that could easily evolve to support additional features and user requirements.
