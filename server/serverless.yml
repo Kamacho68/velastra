@@ -1,0 +1,19 @@
+service: velastra-backend
+provider:
+  name: aws
+  runtime: nodejs20.x
+  region: us-east-1
+
+functions:
+  graphql:
+    handler: src/lambda.handler
+    events:
+      - http:
+          path: /graphql
+          method: post
+      - http:
+          path: /health
+          method: get
+      - http:
+          path: /
+          method: get
