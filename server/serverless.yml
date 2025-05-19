@@ -1,4 +1,5 @@
 service: velastra-backend
+
 provider:
   name: aws
   runtime: nodejs20.x
@@ -11,9 +12,25 @@ functions:
       - http:
           path: /graphql
           method: post
+          cors:
+            origin: https://d2aklctv29jylh.cloudfront.net  # Or you can replace with the wild card '*'
+            headers:
+              - Content-Type
+              - X-Amz-Date
+              - Authorization
+              - X-Api-Key
+              - X-Amz-Security-Token
+              - X-Amz-User-Agent
+            allowCredentials: false
+      - http:
+          path: /graphql
+          method: options  # 👈 Preflight request support
+          cors: true
       - http:
           path: /health
           method: get
+          cors: true
       - http:
           path: /
           method: get
+          cors: true
