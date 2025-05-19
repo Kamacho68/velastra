@@ -4,7 +4,7 @@ A web application that helps users plan their activities based on weather foreca
 
 ## 📋 Application Overview
 
-The Weather Activity Ranker is designed to help users make informed decisions about when to schedule different types of activities based on weather conditions. By entering a city or town name, users receive personalised recommendations that consider multiple weather factors to determine the optimal days for each activity.
+The Weather Activity Forecast is designed to help users make informed decisions about when to schedule different types of activities based on weather conditions. By entering a city or town name, users receive personalised recommendations that consider multiple weather factors to determine the optimal days for each activity.
 
 ## 🏗️ Architecture Overview
 
