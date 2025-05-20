@@ -10,8 +10,15 @@ const activityResolvers = require('./resolvers/activityResolvers');
 
 const app = express();
 
-// Middleware
+// Middleware updates
 app.use(cors());
+// Enable CORS
+// app.use(cors({
+//     origin: 'https://d2aklctv29jylh.cloudfront.net',
+//     methods: ['GET', 'POST', 'OPTIONS'],
+//     allowedHeaders: ['Content-Type', 'Authorization']
+// }));
+// app.options('*', cors()); // Preflight support
 app.use(helmet());
 app.use(rateLimit({ windowMs: 15 * 60 * 1000, max: 100 }));
 
