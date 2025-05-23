@@ -5,6 +5,7 @@ import SearchForm from './components/SearchForm';
 import ActivityList from './components/ActivityList';
 import { useActivities } from './hooks/useActivities';
 import './styles/global.css';
+import './App.css'
 
 function App() {
   const {
