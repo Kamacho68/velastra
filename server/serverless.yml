@@ -13,7 +13,7 @@ functions:
           path: /graphql
           method: post
           cors:
-            origin: https://d2aklctv29jylh.cloudfront.net  # Or you can replace with the wild card '*'
+            origin: '*'  # Or you can replace with the wild card '*'
             headers:
               - Content-Type
               - X-Amz-Date
